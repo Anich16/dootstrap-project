@@ -52,6 +52,11 @@ $light-color: #fff;
     border-bottom: 2px solid #736357;
     font-family: $font-title;
     font-weight: 800;
+    &:hover {
+        color: $light-color;
+        background: #c0ac94;
+        
+    }
 }
 .description {
     .title {
@@ -120,9 +125,25 @@ body {
                 margin-top: 15px;
                 
                 .icon {
-                    width: 5%;
                     float: left;
-                    margin: 0 20px 10px 0;
+                    margin: 0 15px 10px 0;
+                    width: 30px;
+                    height: 30px;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-position: center;
+                }
+                .pan {
+                    background-image: url(images/pan.png);
+                }
+                .sheet {
+                    background-image: url(images/dev.png);
+                }
+                .nut {
+                    background-image: url(images/srch.png);
+                }
+                .bag {
+                    background-image: url(images/bag.png);
                 }
                 
             }
@@ -151,18 +172,25 @@ body {
             .projects-list {
                 .item {
                     display: flex;
-                    margin: 10px 0;
-                    .photo {
-                        width: 145px;
-                        float: left;
-                        display: block;
-                        height: 100%;
+                    max-width: 50%;
+                    margin-bottom: 15px;
+                    .link {
+                        margin: 0 auto;
+                    
+                        .photo {
+                            width: 145px;
+                            float: left;
+                            display: block;
+                            height: 100%;
+                        }
                     }
                     .description {
+                        margin: 0 auto;
                         background: #fbfaf8;
                         padding: 15px;
                         position: relative;
-                        width: 50%;
+                        width: 145px;
+                        z-index: 1;
                         .title {
                             font-size: 12px;
                             color: #c7b299;
@@ -178,10 +206,13 @@ body {
                         background: #fbfaf8;
                         position: absolute;
                         transform: rotate(45deg);
-                        left: 150px;
-                        top: 25%;
+                        left: 35%;
+                        bottom: 41%
                     }
                 }
+            }
+            .button {
+                margin: 0 45%;
             }
             
         }
@@ -396,8 +427,18 @@ body {
             .projects {
                 .projects-list {
                     .item {
-                        margin: 15px 0;
                         max-width: 50%;
+                        .link {
+                            .photo {
+                                width: 190px;
+                            }
+                        }
+                        .description {
+                            width: 190px;
+                        }
+                        .rhombus {
+                            bottom: 32%;
+                        }
                     }
                 }
             }
@@ -556,7 +597,10 @@ body {
                                 font-family: $font-text;
                                 display: block;
                                 text-align: center;
-                                padding: 5px 5px;                               
+                                padding: 5px 5px; 
+                                &:hover {
+                                    color: #837869; 
+                                }                              
                             }
                         }
                     }
@@ -630,9 +674,17 @@ body {
                 }
                 .left {
                     left: 5%;
+                    &:hover {
+                        background: #000;
+                        opacity: 0.3;
+                    }
                 }
                 .right {
                     right: 5%;
+                    &:hover {
+                        background: #000;
+                        opacity: 0.3;
+                    }
                 }
             }
         }
@@ -644,10 +696,10 @@ body {
                     text-align: center;
                     .icon {
                         float: none;
-                        width: 40px;
-                        height: 40px;
-                        margin: 0;
-                        margin-bottom: 15px;
+                        width: 50px;
+                        height: 50px;
+                        display: block;
+                        margin: 0 auto 15px;
                     }
                 &:after {
                     content: "";
@@ -658,8 +710,122 @@ body {
                     margin: 10% auto;
                 }
                     .description {
-                        height: 120px;                    }
+                        height: 120px;
+                        .title {
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }        
+                    }
+                &:hover {
+                    .title {
+                        color: #c7b299;
+                    }
+                    &:after {
+                        background: #c7b299;
+                    }
+                    .pan {
+                        background-image: url(images/pan-gold.png);
+                    }
+                    .sheet {
+                        background-image: url(images/dev-gold.png);
+                    }
+                    .nut {
+                        background-image: url(images/srch-gold.png);
+                    }
+                    .bag {
+                        background-image: url(images/bag-gold.png);
+                    }
+                
                 }
+                }   
+            }
+            .info-about {
+                padding: 60px 70px 0;
+                margin: 0;
+                .photo-slider {
+                    margin-top: 40px;
+                    position: relative;
+                    .background-photo {
+                        display: block;
+                        .slider-left {
+                            position: absolute;
+                            z-index: 1;
+                            width: 500px;
+                            bottom: 0;
+                        }
+                        .slider-right {
+                            position: absolute;
+                            z-index: 2;
+                            width: 500px;
+                            right: 0;
+                            bottom: 0;
+                        }
+                    }
+                    .front-photo {
+                        width: 500px;
+                        z-index: 3;
+                    }
+                }
+            }
+            .purchase {
+                display: block;
+                padding: 20px 90px;
+                background: radial-gradient(circle farthest-corner at 100px 50px, #271f1b, #4e3427);
+                .description {
+                    width: 600px;
+                    .title {
+                        color: $light-color;
+                        .logo {
+                            color: #c7b299;
+                        }
+                    }
+                    .text {
+                        color: #615855;
+                    }
+                }
+                .button {
+                    width: 150px;
+                    margin: 5px 0;
+                }
+            }
+            .projects {
+                padding: 50px 70px;
+                .projects-list {
+                    .item {
+                        max-width: 33%;
+                        .link {
+                            padding: 0;
+                        
+                            .photo {
+                                width: 100%;
+
+                            }
+                        }
+                        .description {
+                            width: 100%;
+                        }
+                        .rhombus {
+                            width: 30px;
+                            height: 30px;
+                            left: 20%;
+                            bottom: 22%;
+
+                        }
+                    }
+                }
+            }
+            .presentation {
+                padding: 70px 300px;
+                background-image: url(images/video.jpg);
+                background-size: 100%;
+                background-repeat: no-repeat;  
+                .button-play {
+                    .icon {
+                        width: 60px;
+                        opacity: 0.7;
+                    } 
+                }        
             }
         }
     }
