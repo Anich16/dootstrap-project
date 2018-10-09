@@ -289,7 +289,7 @@ body {
         .news {
             padding: 10px 15px;
             .news-list {
-                margin-top: 15px;
+                margin: 15px;
                 .item {
                     display: block;
                     text-align: center;
@@ -322,9 +322,6 @@ body {
                     }
                     }
                     
-                    &:last-of-type {
-                        margin-bottom: 10px;
-                    }
                 }
                 .date-block {
                     display: block;
@@ -853,6 +850,7 @@ body {
                         position: relative;
                         .link {
                             padding: 0;
+                            margin: 0;
                         
                             .photo {
                                 width: 100%;
@@ -1020,20 +1018,30 @@ body {
             .news {
                 padding: 50px 70px;
                 .news-list {
-                    margin-top: 25px;
+                    margin: 25px;
                     display: flex;
                     justify-content: space-between;
                     .item {
                         max-width: 31%;
-                        margin-bottom: 0; 
+                        margin: 0; 
                         padding: 0;
                         position: relative;
+                        
                         .new-photo {
                             .link {
                                 .photo {
                                     width: 100%;
                                 }
                             }
+                            .hover-block {
+                            background: #000;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            opacity: 0;
+                        }
                         }
                         .description {
                             text-align: left;
@@ -1063,13 +1071,12 @@ body {
                                 padding: 3px 5px;
                             }
                         }
-                        .hover-block {
-                            
-                        }
+                       
                     &:hover {
                         .description {
                             background: #362f2d;
                             border: 2px solid #362f2d;
+                            border-top: none;
                             .title {
                                 color: #c7b299;
                             }
@@ -1087,11 +1094,16 @@ body {
                                 background: #a48d72;
                             }
                         }
+                        .new-photo {
+                        .hover-block {
+                            opacity: 0.6;
+                        }
                     }
+                    }
+                   
                     }
                 }
                 .slider {
-                    margin-top: 20px;
                     .link-left {
                         height: 20px;
                         width: 20px;
@@ -1358,7 +1370,7 @@ body {
             .news {
                 padding: 70px 150px;
                 .news-list {
-                    margin-top: 40px;
+                    margin: 40px;
                     .item {
                         .description {
                             .title {
@@ -1378,7 +1390,6 @@ body {
                     }
                 }
                 .slider {
-                    margin-top: 40px;
                     .link-left {
                         height: 25px;
                         width: 25px;
@@ -1497,5 +1508,70 @@ body {
                 padding: 20px 240px;
             }
         }
+    }
+}
+@media screen and (min-width: 1700px){
+    body {
+        .header {
+            padding: 40px 300px 20px; 
+            .content {
+                margin-top: 240px;
+            }
+            .slider {
+                margin-top: 220px;
+            }
+            .arrow-block {
+                .arrow {
+                    bottom: 45%;
+                }
+            }
+        }
+        .wrapper {
+            .services-list {
+                padding: 80px 300px;
+            }
+            .info-about {
+                padding: 80px 300px 0;
+            }
+            .purchase {
+                padding: 40px 270px;
+            }
+            .projects {
+                padding: 70px 300px;
+                .projects-list {
+                    .item {
+                        .rhombus {
+                            width: 40px;
+                            height: 40px;
+                            bottom: 17%;
+                        }
+                    }
+                }
+            }
+            .presentation {
+                padding: 185px 500px;
+            }
+            .user-info {
+                padding: 70px 300px 0;
+            }
+            .preferences {
+                padding: 65px 370px 60px;
+            }
+            .news {
+                padding: 70px 300px;
+            }
+            .brands {
+                padding: 100px 300px;
+            }
+            .contacts {
+                padding: 75px 300px;
+            }
+        }
+        .footer {
+            .footer-block {
+                padding: 20px 300px;
+            }
+        }
+        
     }
 }
