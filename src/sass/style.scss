@@ -181,6 +181,7 @@ body {
                             font-family: $font-text;
                             padding: 3px 10px;
                             border: 1px solid #ebebeb;
+                            border-radius: 5px;
                         }
                     &:last-of-type {
                         margin-right:0; 
@@ -376,7 +377,7 @@ body {
     .footer-block {
         background: #111111;
         color: #555555;
-        padding: 10px 20px;
+        padding: 20px 20px;
         font-size: 8px;
         font-family: $font-text;
         .copyright {
@@ -428,6 +429,9 @@ body {
                 }
             }
             .info-about {
+                .description {
+                    padding: 0 10%;
+                }
                 .photo-slider {
                     .front-photo {
                         margin: 0 auto;
@@ -445,6 +449,9 @@ body {
                         }
                     }
                 }
+                .description {
+                    padding: 0 10%;
+                }
                 .projects-list {
                     .item {
                         max-width: 50%;
@@ -460,6 +467,11 @@ body {
                             bottom: 32%;
                         }
                     }
+                }
+            }
+            .news {
+                .description {
+                    padding: 0 10%;
                 }
             }
             .brands {
@@ -761,7 +773,7 @@ body {
                     margin: 10% auto;
                 }
                     .description {
-                        height: 120px;
+                        height: 50%;
                         .title {
                             &:hover {
                                 text-decoration: none;
@@ -794,6 +806,9 @@ body {
             .info-about {
                 padding: 60px 70px 0;
                 margin: 0;
+                .description {
+                    padding: 0 27%;
+                }
                 .photo-slider {
                     margin-top: 40px;
                     position: relative;
@@ -814,8 +829,10 @@ body {
                         }
                     }
                     .front-photo {
-                        width: 500px;
                         z-index: 3;
+                        .photo {
+                            width: 500px;
+                        }
                     }
                 }
             }
@@ -838,6 +855,7 @@ body {
                 .button {
                     width: 150px;
                     margin: 5px 0;
+                    padding: 17px 30px;
                 }
             }
             .projects {
@@ -859,6 +877,9 @@ body {
                         }
                         
                     }
+                }
+                .description {
+                    padding: 0 26%;
                 }
                 .projects-list {
                     .item {
@@ -958,7 +979,7 @@ body {
                 }
             }
             .presentation {
-                padding: 60px 300px;
+                padding: 55px 300px;
                 background-image: url(images/video.jpg);
                 background-size: 100%;
                 background-repeat: no-repeat;  
@@ -982,7 +1003,9 @@ body {
                 .info {
                     max-width: 59%;
                     .list-devices {
+                        margin-left: 30px;
                         .list {
+
                             .item {
                                 font-size: 14px;
                                 .icon {
@@ -1035,6 +1058,9 @@ body {
             }
             .news {
                 padding: 50px 70px;
+                .description {
+                    padding: 0 25%;
+                }
                 .news-list {
                     margin: 25px;
                     display: flex;
@@ -1279,9 +1305,10 @@ body {
         }
         .wrapper {
             .services-list {
-                padding: 80px 160px;
+                padding: 80px 160px 40px;
                 .item {
                     .description {
+                        height: 40%;
                         .title {
                             font-size: 22px;
                         }
@@ -1297,17 +1324,22 @@ body {
             }
             .info-about {
                 padding: 80px 140px 0;
+                .description {
+                    padding: 0 20%;
+                }
                 .photo-slider {
                     .background-photo {
                         .slider-left {
-                            width: 600px;
+                            width: 700px;
                         }
                         .slider-right {
-                            width: 600px;
+                            width: 700px;
                         }
                     }
                     .front-photo {
-                        width: 600px;
+                        .photo {
+                            width: 700px;
+                        }
                     }
                 }
             }
@@ -1335,6 +1367,9 @@ body {
                             }
                         }
                     }
+                }
+                .description {
+                    padding: 0 20%;
                 }
                 .projects-list {
                     .item {
@@ -1371,6 +1406,7 @@ body {
                         }
                     }
                     .list-devices {
+                        margin-left: 50px;
                         .list {
                             .item {
                                 font-size: 16px;
@@ -1395,6 +1431,9 @@ body {
             }
             .news {
                 padding: 70px 150px;
+                .description {
+                    padding: 0 20%;
+                }
                 .news-list {
                     margin: 40px;
                     .item {
@@ -1429,10 +1468,11 @@ body {
                 }
             }
             .brands {
-                padding: 100px 170px;
+                padding: 80px 170px;
                 .brands-list {
+                    align-items: center;
                     .icon {
-                        height: 100px;
+                        height: 100%;
                         max-width: 20%;
                     }
                 }
@@ -1491,7 +1531,12 @@ body {
         }
         .wrapper {
             .services-list {
-                padding: 80px 240px;
+                padding: 80px 240px 30px;
+                .item {
+                    .description {
+                        height: 30%;
+                    }
+                }
             }
             .info-about {
                 padding: 80px 240px 0;
@@ -1554,16 +1599,38 @@ body {
         }
         .wrapper {
             .services-list {
-                padding: 80px 300px;
+                padding: 80px 300px 30px;
+
             }
             .info-about {
                 padding: 80px 300px 0;
+                .description {
+                    padding: 0 22%;
+                }
+                .photo-slider {
+                    .background-photo {
+                        .slider-left {
+                            width: 800px;
+                        }
+                        .slider-right {
+                            width: 800px;
+                        }
+                    }
+                    .front-photo {
+                        .photo {
+                            width: 800px;
+                        }
+                    }
+                }
             }
             .purchase {
                 padding: 40px 270px;
             }
             .projects {
                 padding: 70px 300px;
+                .description {
+                    padding: 0 22%;
+                }
                 .projects-list {
                     .item {
                         .rhombus {
@@ -1585,6 +1652,9 @@ body {
             }
             .news {
                 padding: 70px 300px;
+                .description {
+                    padding: 0 22%;
+                }
             }
             .brands {
                 padding: 100px 300px;
