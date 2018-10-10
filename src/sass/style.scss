@@ -521,8 +521,19 @@ body {
                             .date {
                                 font-size: 8px;
                                 color: #363636;
+                                display: block;
+                            }
+                        &:hover {
+                            .date {
+                                color: #fff;
+                                text-decoration: none;
+                            }
+                            .info {
+                                color: #c7b299;
+                                text-decoration: none;
                             }
                             
+                        }
                         }
                         
                     }
@@ -544,7 +555,14 @@ body {
                             .time {
                                 color: #363636;
                                 font-size: 8px;
+                                display: block;
                             }
+                        &:hover {
+                            .info {
+                                text-decoration: none;
+                            }
+
+                        }
                         }
                     }
                     .widget {
@@ -1057,6 +1075,9 @@ body {
                             }
                             .link {
                                 font-size: 12px;
+                                &:hover {
+                                    text-decoration: none;
+                                }
                             }
                         }
                         .date-block {
@@ -1131,9 +1152,14 @@ body {
                 font-size: 14px;
                 .contacts-list {
                     .about {
-                        .link {
+                        .logo-link {
                             .logo {
                                 width: 150px;
+                            }
+                        }
+                        .link {
+                            &:hover {
+                                text-decoration: none;
                             }
                         }
                     }
