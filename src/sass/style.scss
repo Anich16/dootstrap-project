@@ -278,6 +278,12 @@ body {
                             .icon {
                                 width: 15px;
                                 margin-right: 15px;
+                                float: left;
+                            }
+                            .text {
+                                display: inline-block;
+                                width: 91%;
+                                margin: 0;
                             }
                         }
                     }
@@ -1008,6 +1014,7 @@ body {
 
                             .item {
                                 font-size: 14px;
+                                margin-top: 5px;
                                 .icon {
                                     width: 20px;
                                 }
@@ -1051,6 +1058,7 @@ body {
                                 font-size: 14px;
                                 font-family: $font-text;
                                 text-transform: uppercase;
+                                height:40px;
                             }
                         }
                     }
@@ -1411,6 +1419,13 @@ body {
                             .item {
                                 font-size: 16px;
                                 line-height: 32px;
+                                .icon {
+                                    width: 25px;
+                                }
+                                .text {
+                                    width: 91%;
+                                    line-height: 25px;
+                                }
                                 
                             }
                         }
